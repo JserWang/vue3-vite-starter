@@ -1,8 +1,9 @@
 {
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
-    "source.organizeImports": true
+    "source.organizeImports": true,
   },
+  "typescript.format.semicolons": "remove",
   "editor.tabSize": 2,
   "editor.linkedEditing": true,
   "scss.lint.unknownAtRules": "ignore",
