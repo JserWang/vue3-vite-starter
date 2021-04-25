@@ -1,0 +1,70 @@
+{
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "tsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/vue3-recommended"
+  ],
+  "rules": {
+    "vue/html-indent": ["error", 2],
+    "vue/script-indent": ["error", 2],
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "vue/html-quotes": [ "error", "double", { "avoidEscape": false } ],
+    "semi": ["error", "never"],
+    "space-infix-ops": ["error", { "int32Hint": false }],
+    "no-multi-spaces": "error",
+    "no-whitespace-before-property": "error",
+    "space-before-blocks": "error",
+    "space-before-function-paren": ["error", "never"],
+    "space-in-parens": ["error", "never"],
+    "spaced-comment": ["error", "always"],
+    "template-tag-spacing": ["error", "always"],
+    "no-var": "error",
+    "prefer-destructuring": [
+      "error", 
+      {
+        "array": true,
+        "object": true
+      }, 
+      { "enforceForRenamedProperties": false }
+    ],
+    "comma-dangle": ["error", "never"],
+    "arrow-spacing": "error",
+    "prefer-template": "error",
+    "template-curly-spacing": "error",
+    "quote-props": ["error", "as-needed"],
+    "object-curly-spacing": ["error", "always"],
+    "no-unneeded-ternary": "error",
+    "no-restricted-syntax": ["error", "WithStatement", "BinaryExpression[operator='in']"],
+    "no-lonely-if": "error",
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+    "no-submodule-imports": ["off", "/@"],
+    "no-implicit-dependencies": ["off", ["/@"]],
+    "@typescript-eslint/no-explicit-any": "warn",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*"}, 
+      { "blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"]}
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      { "max": 1, "maxEOF": 1, "maxBOF": 1 }
+    ],
+    "eol-last": ["error", "always"]
+  }
+}

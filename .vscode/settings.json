@@ -1,0 +1,14 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "scss.lint.unknownAtRules": "ignore",
+  "css.validate": true,
+  "scss.validate": true,
+  "volar.tsPlugin": true,
+  "volar.tsPluginStatus": false,
+  "git.ignoreLimitWarning": true
+}
