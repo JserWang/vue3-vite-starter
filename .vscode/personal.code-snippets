@@ -1,0 +1,34 @@
+{
+  "log with tag": {
+    "prefix": "log",
+    "body": [
+      "console.log('TAG:$1', $2)$0"
+    ],
+  },
+  "vue typescript": {
+    "prefix": "vue",
+    "body": [
+      "<template>",
+      "  $2",
+      "</template>",
+      "",
+      "<script lang='ts'>",
+      "  import { defineComponent } from 'vue'",
+      "",
+      "  export default defineComponent({",
+      "   name: '$1',",
+      "   setup() {",
+      "      $3",
+      "      return {",
+      "        $4",
+      "      }",
+      "    },",
+      "  })",
+      "</script>",
+      "",
+      "<style lang='less' scoped>",
+      "  $1",
+      "</style>"
+    ]
+  }
+}
