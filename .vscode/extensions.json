@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "coenraads.bracket-pair-colorizer-2",
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "johnsoncodehk.volar",
+    "mikestead.dotenv",
+    "oderwat.indent-rainbow",
+    "orta.vscode-jest",
+    "streetsidesoftware.code-spell-checker",
+    "stylelint.vscode-stylelint",
+  ]
+}
