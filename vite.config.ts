@@ -1,3 +1,4 @@
+import { toBoolean } from '@jserwang/utils'
 import vue from '@vitejs/plugin-vue'
 import { loadEnv, UserConfig } from 'vite'
 import { vitePluginFaker } from 'vite-plugin-faker'
@@ -14,7 +15,7 @@ export default ({ mode }): UserConfig => {
     },
     plugins: [
       vue(),
-      VITE_USE_MOCK === 'true' && vitePluginFaker({
+      toBoolean(VITE_USE_MOCK) && vitePluginFaker({
         basePath: '/src/api',
         includes: [/^.*Service/],
         mockDir: '/mock',
