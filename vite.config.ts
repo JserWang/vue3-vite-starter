@@ -1,6 +1,7 @@
 import { toBoolean } from '@jserwang/utils'
 import vue from '@vitejs/plugin-vue'
 import { loadEnv, UserConfig } from 'vite'
+import ViteComponents, { ElementPlusResolver } from 'vite-plugin-components'
 import { vitePluginFaker } from 'vite-plugin-faker'
 import { alias } from './build/vite/alias'
 
@@ -20,6 +21,11 @@ export default ({ mode }): UserConfig => {
         includes: [/^.*Service/],
         mockDir: '/mock',
         watchFile: true
+      }),
+      ViteComponents({
+        customComponentResolvers: [
+          ElementPlusResolver()
+        ]
       })
     ]
   }
